@@ -9,10 +9,8 @@ MAKEOPTS="-j5"
 # WARNING: Changing your CHOST is not something that should be done lightly.
 # Please consult http://www.gentoo.org/doc/en/change-chost.xml before changing.
 CHOST="x86_64-pc-linux-gnu"
-
 # These are the USE flags that were used in addition to what is provided by the
 # profile used for building.
-
 CLI="cli ncurses aalib libcaca"
 XUSE="X xorg xcomposite opengl aiglx nls cairo xterm-color bash-completion glitz xv -3dsnow"
 FONTS="corefonts truetype bitmap-fonts truetype-fonts type1-fonts xft"
@@ -32,12 +30,8 @@ GTK="gtk"
 GNOME="gnome gedit nautilus"
 COMPIZ="emerald"
 NETWORK="dhcpcd -wifi -madwifi"
-
 USE="${CLI} ${XUSE} ${NETWORK} ${COMPIZ} ${GNOME} ${GTK} ${QT} ${KDE} ${SYSTEM} ${SECURITY} ${TEXT} ${JAVA} ${VCS} ${COMPRESS} ${MEDIA} ${SOUND} ${IMAGE} ${FONTS} ${GENERAL} ${WEB}"
-
-##old USE
 ##USE="mp3 mp4 -cups -kde alsa gnome consolekit -arts -qt3 -qt4 truetype gtk vim-syntax dri ufed xcomposite opengl nls X xorg dbus nvidia avahi vdpau hal mmx sse sse2"
-
 FEATURES="sandbox ccache parallel-fetch userfetch candy"
 CCACHE_SIZE="2G"
 CCACHE_DIR="/var/tmp/ccache"
